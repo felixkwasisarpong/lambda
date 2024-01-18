@@ -5,7 +5,7 @@ export const handler:Handler = async (event:APIGatewayProxyEvent):Promise<APIGat
     const val = _.random(max);
     const response = {
       statusCode: 200,
-      body: JSON.stringify(`The random value max ${max} is: ${val}`)
+      body: JSON.stringify(`The random value max ${max}  is: ${val}`)
     };
     return response;
   };
